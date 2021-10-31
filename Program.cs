@@ -9,7 +9,7 @@ namespace stregsystem
         static void Main(string[] args)
         {
             Stregsystem s = new Stregsystem();
-            s.GetAllProducts();
+            s.Run();
         }
     }
 }
