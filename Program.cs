@@ -1,22 +1,15 @@
 ﻿using System;
 using System.Text.RegularExpressions;
-using Stregsystem.Models;
+using stregsystem.Models;
 
-namespace Stregsystem
+namespace stregsystem
 {
     class Program
     {
         static void Main(string[] args)
         {
-            try
-            { 
-                Product p = new Product(1, "Cola", 1200, 1);
-                Console.WriteLine(p.ToString());
-            }
-            catch (System.Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            Stregsystem s = new Stregsystem();
+            s.GetAllProducts();
         }
     }
 }
