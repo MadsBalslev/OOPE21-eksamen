@@ -10,8 +10,8 @@ namespace Stregsystem
         {
             try
             { 
-                User u = new User(1, "Mads", "Balslev", "Balslev", "madspbalslev@gmail.com-", 7300);
-                Console.WriteLine(u.ToString());
+                Product p = new Product(1, "Cola", 1200, 1);
+                Console.WriteLine(p.ToString());
             }
             catch (System.Exception e)
             {
