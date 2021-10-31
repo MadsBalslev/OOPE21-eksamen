@@ -1,4 +1,4 @@
-namespace Stregsystem.Models
+namespace stregsystem.Models
 {
     public class Transaction
     {
