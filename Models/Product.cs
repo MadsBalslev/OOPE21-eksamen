@@ -1,8 +1,8 @@
 using System;
 
-namespace Stregsystem.Models
+namespace stregsystem.Models
 {
-  public class Product
+  public class Product : IPrintable
   {
     public Product(int id, string name, decimal price, int active)
     {
