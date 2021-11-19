@@ -8,8 +8,10 @@ namespace stregsystem
     {
         static void Main(string[] args)
         {
-            Stregsystem s = new Stregsystem();
-            s.Run();
+            Stregsystem.Run();
+            // User u = new User(1, "Mads", "Balslev", "Balslev", "madspbalslev@gmail.com", 3000);
+            // Transaction t = new Transaction(1,u, 200);
+            // System.Console.WriteLine(t.ToString());
         }
     }
 }
