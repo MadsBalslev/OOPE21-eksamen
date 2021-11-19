@@ -53,6 +53,11 @@ namespace stregsystem.Models
         }
         public decimal Balance { get; private set; }
 
+        public void UpdateBalance(decimal amount)
+        {
+            Balance = Balance + amount;
+        }
+
         public override string ToString() => $"{Firstname} {Lastname} ({Email})";
 
         public int CompareTo(User u)

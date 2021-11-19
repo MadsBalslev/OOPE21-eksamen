@@ -2,8 +2,15 @@ namespace stregsystem.Models
 {
     public class BuyTransaction : Transaction
     {
-        public BuyTransaction(int id, User user, decimal amount) : base(id, user, amount)
+        public BuyTransaction(User user, Product product) : base(user, product.Price)
         {
+            Execute();
+        }
+
+        public override void Execute()
+        {
+            _user.UpdateBalance(-_amount);
+            base.Execute();
         }
     }
 }
