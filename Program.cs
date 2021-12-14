@@ -8,15 +8,15 @@ namespace stregsystem
     {
         static void Main(string[] args)
         {
-            // Stregsystem.Run();
-            User u = new User(1, "Mads", "Balslev", "Balslev", "madspbalslev@gmail.com", 3000);
-            System.Console.WriteLine(u.Balance);
+            Stregsystem.Run();
+            // User u = new User(1, "Mads", "Balslev", "Balslev", "madspbalslev@gmail.com", 3000);
+            // System.Console.WriteLine(u.Balance);
 
-            Product p = new Product(1, "mælk", 3500, 1);
+            // Product p = new Product(1, "mælk", 3500, 1);
 
-            BuyTransaction t = new BuyTransaction(u, p);
-            System.Console.WriteLine(t.ToString());
-            System.Console.WriteLine(u.Balance);
+            // BuyTransaction t = new BuyTransaction(u, p);
+            // System.Console.WriteLine(t.ToString());
+            // System.Console.WriteLine(u.Balance);
         }
     }
 }

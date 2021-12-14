@@ -1,5 +1,6 @@
 using System;
 using System.Text.RegularExpressions;
+using stregsystem.Shared;
 
 namespace stregsystem.Models
 {
@@ -16,28 +17,18 @@ namespace stregsystem.Models
         }
         private int _id;
         private string _email;
-        private string _firstname;
-        private string _lastname;
+        private Name _firstname;
+        private Name _lastname;
 
         public string Firstname
         {
-            get => _firstname;
-            private set
-            {
-                if (value == null)
-                    throw new ArgumentNullException("Firstname can't be null");
-                _firstname = value;
-            }
+            get => _firstname.String;
+            private set => _firstname = new Name(value);
         }
         public string Lastname
         {
-            get => _lastname;
-            private set
-            {
-                if (value == null)
-                    throw new ArgumentNullException("Lastname can't be null");
-                _lastname = value;
-            }
+            get => _lastname.String;
+            private set => _lastname = new Name(value);
         }
         public string Username { get; private set; }
         public string Email
@@ -66,5 +57,11 @@ namespace stregsystem.Models
             if (this._id < u._id) return 1;
             return 0;
         }
+
+        public override int GetHashCode()
+        {
+            return _id;
+        }
+        
     }
 }
