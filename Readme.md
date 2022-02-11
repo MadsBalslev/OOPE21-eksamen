@@ -1,3 +1,5 @@
+# EZ 12 GG
+
 # Del 1: Stregsystemets kerne
 Stregsystemet skal administrere brugere, produkter, og transaktioner mellem disse.
 ## Classes
